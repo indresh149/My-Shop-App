@@ -1,5 +1,6 @@
 package com.example.android.myshop
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Build
@@ -8,6 +9,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowInsets
 import android.view.WindowManager
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.res.ResourcesCompat
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,12 +38,13 @@ class SplashActivity : AppCompatActivity() {
         2500
         )
 
-       val typeface: Typeface = Typeface.createFromAsset(assets, "Mogata.ttf")
-        //tv_app_name.typeface = typeface
+
+
     }
 }
 
 private fun Handler.postDelayed(function: () -> Unit) {
 
 }
+
 
